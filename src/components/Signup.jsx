@@ -20,13 +20,13 @@ import Checkbox from "@mui/material/Checkbox";
 const Signup = () => {
   const paperStyle = { padding: "30px 20px", width: 300, margin: "20px auto" };
   const headerStyle = { margin: 0 };
-  const avatarStyle = { backgroundColor: "#1bbd7e" };
-  const marginTop = { marginTop: 5 };
+  // const avatarStyle = { backgroundColor: "#1bbd7e" };
+  // const marginTop = { marginTop: 5 };
 
   const navigate = useNavigate();
 
   return (
-    <Container component="main" maxWidth="xs" sx={{marginTop: 10}}>
+    <Container component="main" maxWidth="xs" sx={{marginTop: 20}}>
       <Grid>
         <Paper elevation={20} style={paperStyle}>
           <Grid align="center">
@@ -68,7 +68,7 @@ const Signup = () => {
               type="submit"
               variant="contained"
               color="primary"
-              onClick={() => navigate("/login")}
+              onClick={() => navigate("/")}
             >
               Sign up
             </Button>

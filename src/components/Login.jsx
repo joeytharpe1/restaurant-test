@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 //material ui imports
 import Avatar from "@mui/material/Avatar";
@@ -30,6 +32,7 @@ function Copyright(props) {
 
   //login function
 const Login = () => {
+  const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -46,7 +49,7 @@ const Login = () => {
       <CssBaseline />
       <Box
         sx={{
-          marginTop: 8,
+          marginTop: 20,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -98,6 +101,7 @@ const Login = () => {
             fullWidth
             variant="contained"
             sx={{ mt: 3, mb: 2, '&:hover':{backgroundColor: "secondary.main" } }}
+            onClick={() => navigate("/home")}
           >
             Sign In
           </Button>
